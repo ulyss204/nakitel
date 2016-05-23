@@ -514,7 +514,6 @@ header {
       width: 30px;
       height: 25px;
       background-color: #811c1b;
-      color: #ff3f3e;
       text-align: center;
       box-shadow: inset 0px 2px 7px 0px #000;
       border: 1px solid #ff5553;
@@ -524,8 +523,12 @@ header {
       margin-left: 10px; }
       header .right .lang:nth-child(1) {
         margin-left: 25px; }
-    header .right .lang_1 {
-      color: #fff; }
+      header .right .lang .lang_1 {
+        color: #fff;
+        text-decoration: none; }
+      header .right .lang a {
+        text-decoration: none;
+        color: #ff3f3e; }
     header .right .search {
       width: 270px;
       text-indent: 5px;
@@ -552,12 +555,14 @@ header {
     width: 54px;
     height: 47px;
     float: left; }
-  .cart .cart_marg {
+  .cart #cart_marg {
     margin-right: 15px;
-    margin-left: 5px; }
+    margin-left: 5px;
+    margin-top: 0; }
   .cart .cart_wrap {
     float: right;
-    margin-left: 10px; }
+    margin-left: 34px;
+    margin-top: -3px; }
     .cart .cart_wrap .cart_info {
       margin: 0;
       color: #fff;
@@ -567,11 +572,11 @@ header {
     .cart .cart_wrap .cart_text {
       color: #fff;
       margin-top: 0;
-      margin-bottom: 8px;
+      margin-bottom: 1px;
       text-shadow: 0 1px 2px #000;
       font-family: 'BebasNeue',sans-serif;
       font-weight: 700;
-      font-size: 20px; }
+      font-size: 24px; }
 
 .btn {
   border-radius: 2px;
@@ -584,7 +589,8 @@ header {
   border: 1px solid #ff4544;
   border-bottom: 0;
   border-top-width: 2px;
-  margin-left: 4px; }
+  margin-left: 4px;
+  outline: none; }
 
 .info {
   margin-top: 30px; }
@@ -660,10 +666,16 @@ header {
   .info_tel .info_phone .col {
     font-size: 20px; }
 
+.info_tel .phone_ua {
+  font-size: 19px; }
+
 .info_tel .color {
   color: #000;
   font-size: 15px;
   width: 178px; }
+
+.info_tel .color_ua {
+  font-size: 17px; }
 
 .info_tel .cap {
   text-transform: uppercase;
@@ -676,10 +688,21 @@ header {
   .info_tel .cap span {
     font-size: 36px; }
 
+.info_tel .btn_ua {
+  font-size: 30px;
+  height: 73px;
+  padding-top: 0;
+  width: 200px; }
+  .info_tel .btn_ua .span_ua {
+    font-size: 22px; }
+
+.info_tel .cap_ua {
+  height: 90px; }
+
 .info_tel .btn_2 {
-  font-size: 22px; }
+  font-size: 32px; }
   .info_tel .btn_2 .span {
-    font-size: 32px; }
+    font-size: 25px; }
 
 .href {
   display: block;
@@ -830,9 +853,15 @@ h3 {
     font-size: 12px; }
     .text .text_mid .text_txt {
       text-indent: 15px;
-      line-height: 21px;
-      font-size: 18px;
-      margin: 8px 15px 23px 20px; }
+      line-height: 23px;
+      font-size: 17px;
+      margin: 27px 15px 23px 20px; }
+      .text .text_mid .text_txt:first-child {
+        margin-top: 28px; }
+      .text .text_mid .text_txt:nth-child(3) {
+        margin-bottom: 33px; }
+      .text .text_mid .text_txt:nth-child(4) {
+        margin-bottom: 32px; }
 
 .text_block {
   background: -webkit-repeating-linear-gradient(135deg, #dc3534, #dc3534 12px, #e56463 10px, #e56463 24px);
@@ -854,6 +883,10 @@ h3 {
   cursor: pointer; }
   .text_block span {
     font-size: 50px; }
+
+.block_ua {
+  font-size: 49px;
+  height: 115px; }
 
 footer {
   background-color: rgba(202, 46, 47, 0.85);
