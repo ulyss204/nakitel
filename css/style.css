@@ -393,11 +393,6 @@ th {
   src: local("HelveticaNeue Bold"), url(fonts/HelveticaNeueCyr-Bold.otf);
   font-style: normal; }
 
-@font-face {
-  font-family: 'HelveticaNeueCyr';
-  src: local("HelveticaNeue Medium"), url(fonts/HelveticaNeueCyr-Medium.otf);
-  font-style: normal; }
-
 body {
   margin: 0 auto;
   background: url(../images/background.jpg) no-repeat;
